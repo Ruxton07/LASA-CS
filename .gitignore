@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Tokens and Secrets
+*.token
+*.secret
+*.key
+**/hosts.yml
