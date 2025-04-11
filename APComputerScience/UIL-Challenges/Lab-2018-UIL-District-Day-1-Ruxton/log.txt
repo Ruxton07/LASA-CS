@@ -1,0 +1,29 @@
+
+Entering bayani test
+Output content error!
+Outputs formats do NOT Match
+Exiting bayani test
+
+Entering gleb test
+Gleb class not found
+Exiting gleb test
+
+Entering dryrun test
+DryRun class not found
+Exiting dryrun test
+
+Entering carla test
+Carla class not found
+Exiting carla test
+
+Entering candela test
+Candela class not found
+Exiting candela test
+
+Entering diya test
+Diya class not found
+Exiting diya test
+
+Entering alice test
+Output contents and formats Match
+Exiting alice test

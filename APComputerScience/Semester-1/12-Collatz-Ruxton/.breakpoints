@@ -1,0 +1,24 @@
+{
+  "files": {
+    "Collatz.java": [
+      {
+        "id": "9afc1db0-611c-41a7-a7bb-27823dbd2c2b",
+        "line": 17,
+        "version": 1071,
+        "index": 506
+      },
+      {
+        "id": "afdecbae-6486-4889-829e-797921f872b9",
+        "line": 21,
+        "version": 1071,
+        "index": 635
+      },
+      {
+        "id": "f69e1d26-7cf5-4c47-a9e5-a68b58afedf4",
+        "line": 32,
+        "version": 1071,
+        "index": 889
+      }
+    ]
+  }
+}

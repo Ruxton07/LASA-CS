@@ -1,0 +1,35 @@
+In this lab, you will play the game Battle, which is based on the popular game Battleship. The main objective is to decode the enemies' fleet disposition code by comparing the coded matrix to the actual matrix.
+
+Complete the Board.java class:
+
+The fleet consists of six ships:
+- Two destroyers (ships number 1 and 2) which are two units long
+- Two cruisers (ships number 3 and 4) which are three units long
+- Two aircraft carriers (ships number 5 and 6) which are four units long
+
+The started code includes the code to create 6-length ships, the getter, setter, and printer methods.
+
+You must complete the Board() constructor
+Using the 4-length aircraft carriers code (which is the most difficult out of all of them), write the code for 3-length and 2-length ships.
+Your constructor must properly use the isValidPosition() and incorporate it into your constructor.
+
+Write the shoot method with parameters for rows & columns (both int values, for a matrix). This method sinks ships and if you it a ship, the program should print "A DIRECT HIT ON SHIP NUMBER."
+
+Every time a ship is sunk, the program should print out which ships have been sunk so far and also gives you a "SPLASH/HIT RATIO.”
+- The splash/hit ratio is the number of splashes divided by the number of hits
+- Example: if you had 9 splashes and 15 hits, the ratio would be 0.6.
+
+Splash values and Hit values should be stored as doubles, not longs.
+
+The game will also include a short moment in which the player can see and memorize best they can what the enemy's board looks like. This will be provided for you.
+
+You will need to override the toString() method that utilizes the printBoard() and printShotsBoard() method correctly. This is because the method will have a parameter which dictates how it is run. This parameter is a boolean that determines whether the toString() method called from the battleship game object is allowed to print the enemy ship locations, or just the locations in which the user has shot.
+
+Therefore, you should have two 2D array instance variables: one that represents the enemy ship locations, and one that represents the shots in which the player has taken. In the shots board, 9 represents a hit battleship, and 8 represents a splash (missed and did not hit a battleship).
+
+If the location the player tries to fire at is outside of the bounds of the board, you should catch this error and set the coordinates to be within bounds.
+For example: If a player enters 7,8 or 0,6 or 9,3, the coordinates for each of those scenarios should be set to 5,5 or 0,5 or 5,3, respectively.
+
+In addition, after every single shot the player fires, the console should be cleared and the new and updates shots board should be reprinted. This is already provided for you.
+
+Finally code the printStats() method. This should be printed after every round and should inform the user about the current status of their game.

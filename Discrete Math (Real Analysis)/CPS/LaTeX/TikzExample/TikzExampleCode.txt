@@ -1,0 +1,35 @@
+\documentclass[11pt]{amsart}
+\usepackage[margin=1in]{geometry}
+\usepackage[parfill]{parskip}
+
+\usepackage{ifplatform, catchfile}
+
+\input{LaTeXPreamble}
+
+\begin{document}
+    \begin{center}
+    \textbf{Tikz examples}
+
+    \begin{tikzpicture}[scale=1]
+    \draw[dashed, gray](-5,0)node[below left]{$(-5,0)$} grid(5,0)node[above right]{$(5,0)$};
+    \draw[ultra thick, <->, purple](-1,6)--(3,0)node[right]{$A$};
+    \draw[ultra thick, domain=0:2, blue] (-3,4) circle (2.5);
+    \draw[ultra thick, domain=-4:5, green, samples=300] plot (\x, {cos(\x*4 r)});
+    \draw[ultra thick, domain=0:4, red, <->] plot (\x, {-1*(pow(\x, 2)-4*\x+2)});
+    \draw[ultra thick, domain=-2:2, orange, <->] plot (\x, {pow(\x, 3)/2});
+    \end{tikzpicture}
+
+    \begin{tikzpicture}[scale=.5]
+        \draw[ultra thick, blue, domain=0:180, samples=500, fill=blue!15] plot (\x: {3.5*(sin(10*\x))});
+        \draw[ultra thick, red, domain=0:720, samples=400, fill=red!15] plot (\x: {2*cos(\x/2)});
+        \foreach \x in {1, 2, ..., 6}
+            \draw[gray] (0,0) circle (\x);
+        \foreach \a in {15, 30, ..., 345}
+            \draw[gray](0:0) -- (\a:6);
+        \draw[<->] (-7, 0)--(7, 0) node[right]{$x$};
+        \draw[<->] (0, -7)--(0, 7) node[above]{$y$};
+        
+    \end{tikzpicture}
+
+    \end{center}
+\end{document}

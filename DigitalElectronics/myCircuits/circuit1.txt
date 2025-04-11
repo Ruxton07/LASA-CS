@@ -1,0 +1,20 @@
+* Schematics Netlist * 
+.include "..\Models\MOSIS.txt" 
+
+* Voltage sources
+VVSds v1 0 DC 2.5         
+VVSgs v2 0 DC 2.5    
+
+* NMOS transistor
+MN2 v1 v2 0 0 tsmc0p35nmos W=0.6u L=0.4u 
+
+.tran 0.1ms 2s
+ 
+.end 
+
+.control
+run 
+set color0 = white
+set xbrushwidth = 5
+plot V(v1)
+.endc

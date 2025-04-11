@@ -1,0 +1,94 @@
+* * * * * * * * CS Checker Log file! * * * * * * * *
+
+= = = = = = Test Library Searches = = = = = =
+size =  4
+X X X X Error in serchByAuthor(Chinua)
+        myLib searchByAuthor() = ["Things Fall Apart" by Chinua Achebe (0)]
+myLib searchByAuthor() = []
+X X X X Error in myLib serchByTitle(The)
+        myLib searchByTitle() = ["The Divine Comedy" by Dante Alighieri (4), "The Invention of Wings: A Novel" by Sue Monk Kidd (4), "In the Blood: A Novel" by Lisa Unger (4)]
+myLib searchByTitle() = []
+X X X X Error in newLib.serchByRating(5)
+        myLib searchByRating() = ["Term Limits" by V. Flynn (5), "What She Left Behind" by Ellen M. Wiseman (5)]
+newLib searchByRating() = []
+
+= = = = = = = = = = = = = = = = 
+
+
+= = = = = = List Fields Library Class = = = = = =
+private class java.util.ArrayList books
+End List Fields
+
+
+= = = = = = Test Book Constructor = = = = = =
+Title: Title01, Author: author01, Rating: 1
+- - - - - - - - - -
+Title: Title2
+Rating: 2
+- - - - - - - - - - - -
+
+
+= = = = = = List Fields Book Class = = = = = =
+private String title
+private String author
+private int rating
+End List Fields
+
+
+= = = = = = List Constructors Library Class = = = = = =
+public Library (class Library)
+public Library (class java.util.ArrayList)
+public Library ()
+public Library (String)
+All Constructors found.
+End list Constructors
+
+
+= = = = = = Test Library Union and getBooks() = = = = = =
+X X X X Error in myLib.union(newLib)
+        union = ["Things Fall Apart" by Chinua Achebe (0), "Fairy tales" by Hans Christian Andersen (0), "The Divine Comedy" by Dante Alighieri (4), "Epic of Gilgamesh" by Anonymous (3), "Already Gone" by John Rector (3), "The Invention of Wings: A Novel" by Sue Monk Kidd (4), "Term Limits" by V. Flynn (5), "In the Blood: A Novel" by Lisa Unger (4), "What She Left Behind" by Ellen M. Wiseman (5), "Missing You" by Harlan Coben (4), "We Are Water: A Novel" by Wally Lamb (3), "Undeniable" by Madeline Sheehan (3), "What She Left Behind" by Ellen M. Wiseman (4)]
+X X X X Error in newLib.getBooks()
+        getBooks() = ["Missing You" by Harlan Coben (4), "We Are Water: A Novel" by Wally Lamb (3), "Undeniable" by Madeline Sheehan (3), "What She Left Behind" by Ellen M. Wiseman (4)]
+X X X X Error in lib.addBooks(newLib.getBooks())
+        equals() = true
+equals() = false
+
+= = = = = = = = = = = = = = = = 
+
+= = = = = Check Version = = = = =
+CSChecker.class version: 0.01
+expected version: 0.01
+- - - - - - - - - - - - - - - - - -
+
+[Ljava.lang.String;@2d6e8792
+
+= = = = = = = = = = = = = = = = List Book Constructors = = = = = = = = = = = = = = = =
+public Book ()
+public Book (String, String, int)
+End list Constructors
+
+
+= = = = = = Test Library From File = = = = = =
+size =  9
+X X X X Error in Library toString() Response X X X X
+Expected: ["Things Fall Apart" by Chinua Achebe, "Fairy tales" by Hans Christian Andersen, "The Divine Comedy" by Dante Alighieri, "Epic of Gilgamesh" by Anonymous, "Already Gone" by John Rector, "The Invention of Wings: A Novel" by Sue Monk Kidd, "Term Limits" by V. Flynn, "In the Blood: A Novel" by Lisa Unger, "What She Left Behind" by Ellen M. Wiseman]
+Actual: toString() = ["Things Fall Apart" by Chinua Achebe (0), "Fairy tales" by Hans Christian Andersen (0), "The Divine Comedy" by Dante Alighieri (4), "Epic of Gilgamesh" by Anonymous (3), "Already Gone" by John Rector (3), "The Invention of Wings: A Novel" by Sue Monk Kidd (4), "Term Limits" by V. Flynn (5), "In the Blood: A Novel" by Lisa Unger (4), "What She Left Behind" by Ellen M. Wiseman (5)]
+
+= = = = = = = = = = = = = = = = 
+
+
+= = = = = = Test Library Add Remove and IndexOf = = = = = =
+X X X X Error in setBooks() X X X X
+        testLib = ["Missing You" by Harlan Coben (4), "We Are Water: A Novel" by Wally Lamb (3), "Undeniable" by Madeline Sheehan (3), "What She Left Behind" by Ellen M. Wiseman (4)]
+X X X X Error in removeBook() X X X X
+        removed book = "We Are Water: A Novel" by Wally Lamb (3)
+added book = "Fairy tales" by Hans Christian Andersen (0)
+removed book = true ("Missing You" by Harlan Coben (4))
+removed book = false ("Missing You" by Harlan Coben (4))
+X X X X Error in addBook() and removeBook() sequence X X X X
+        testLib = ["Undeniable" by Madeline Sheehan (3), "What She Left Behind" by Ellen M. Wiseman (4), "Fairy tales" by Hans Christian Andersen (0)]
+index of "We Are Water: A Novel" by Wally Lamb (3) = -1
+index of "What She Left Behind" by Ellen M. Wiseman (4) = 1
+
+= = = = = = = = = = = = = = = = 
+

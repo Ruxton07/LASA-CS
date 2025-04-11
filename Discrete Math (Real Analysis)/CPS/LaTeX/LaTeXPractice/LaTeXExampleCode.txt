@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\include{LaTeXPreamble}
+
+
+\newcommand{\charlie}[3]{
+\pgfmathtruncatemacro{\a}{mod(#1,2)}
+\ifnumcomp{\a}{=}{0}
+{\textcolor{red}{#2}}
+{\textcolor{blue}{#2}}
+}
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\LaTeX{}}     \textbf{example}
+\end{center}
+
+Hello
+\begin{flushright}
+\textit{world}\hrule
+\end{flushright}
+
+same \hfill line
+
+\begin{enumerate}
+\item words can be
+
+
+\begin{itemize}
+    \item \footnotesize small (footnote size) \footnote{speaking of footnotes...}
+    \item \Large big (Large)
+\end{itemize}
+
+ \item I can create hyperlinks to websites like \href{https://www.google.com}{Google} or to other locations in my document (e.g., \hyperlink{a}{"more on that topic later"}).
+
+\item I use \begin{bf}array\end{bf} for stuff like this:
+
+\[\begin{array}{rrl}
+\tan(-\frac{11\pi}{6}) & = & \tan\frac{\pi}{6} \text{since}-\frac{11\pi}{6} \text{and} \frac{\pi}{6} \text{are coterminal}\\
+ & = & \frac{\sin\frac{\pi}{6}}{\cos\frac{\pi}{6}}\\
+ & = & \frac{\frac{1}{2}}{\frac{\sqrt{3}}{2}}\\
+ & = & \frac{1}{\sqrt{3}} \text{since multiplying by }\frac{2}{2} \text{ is legal}
+\end{array}\]
+
+\item and \begin{bf}tabular\end{bf}  for stuff like this:
+
+\[ \chi(\lambda) = \left| \begin{array}{l|r|r|c}
+\lambda - a & -b & -c & 4th \\
+-d & \lambda - e & -f & \\
+-g & -h & \lambda - i & \end{array} \right|\]
+
+\vspace{.5in}
+\item and stuff like this
+
+\begin{center}
+\begin{tabular}{|l|c|r|}
+\hline
+Lorum & ipsum & dolor \\
+\S & \(\Z\) & \$ \\
+\hline
+
+\end{tabular}
+\end{center}
+\item \charlie{1}{second}{second} \charlie{2}{first}{second}
+
+
+\item
+ \phantom{""}    \newline
+\includegraphics[scale = 0.5]{Hob.png}
+
+\end{enumerate}
+
+
+\newpage
+
+
+\hypertarget{a}{Here are the details I promised earlier.}
+
+
+
+\end{document}

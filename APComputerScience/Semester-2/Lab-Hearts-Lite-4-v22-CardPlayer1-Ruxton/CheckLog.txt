@@ -1,0 +1,121 @@
+* * * * * * * * CS Checker Log file! * * * * * * * *
+
+= = = = = = List Player Class Constructors & Instance Variables = = = = = =
+    spec'd > public Player (String, int)
+
+- - - - - - - - List Player Class Fields - - - - - - - -
+    spec'd > private class String name
+    spec'd > private int score
+End Player Fields
+
+
+- - - - - - - - Test CardPlayer Constructor - - - - - - - -
+  Constructor initializes fields OK
+"ArrayList<Card> hand" initialized correctly
+  OK
+End list Constructors
+
+
+- - - - - - - - Test CardPlayer Constructor - - - - - - - -
+  Constructor initializes fields OK
+"ArrayList<Card> hand" initialized correctly
+  OK
+End list Constructors
+
+- - - - - - - - List Card Player Class Fields - - - - - - - -
+    spec'd > private ArrayList<Card> hand
+    spec'd > private ArrayList<Card> takenCards
+End Player Fields
+
+
+= = = = = = Test Card Player Level1  = = = = = =
+After adding 6 cards. Player -> Kara Jones (0) [d3(3), hA(14), s6(6), s7(7), c2(2), c3(3)]
+                     refHand -> [d3(3), hA(14), s6(6), s7(7), c2(2)]
+After playing card(5). Player -> Kara Jones (0) [d3(3), hA(14), s6(6), s7(7), c2(2)]
+playCard() correct: c3(3) at index 5 and updated score to 27 points. Player -> Kara Jones (27) [d3(3), hA(14), s6(6), s7(7), c2(2)]
+
+= = = = = = Test Card Player Level1  = = = = = =
+
+
+= = = = = = Test PCChecker Version = = = = = =
+Checker version 0.03 is OK
+
+getField(): NoSuchFieldExceptionjava.lang.NoSuchFieldException: hand
+
+= = = = = = List Card Player Level 1 Constructors/Fieldds = = = = = =
+
+- - - - - - - - Test Card Player Level 1 Constructor - - - - - - - -
+  Constructor initializes fields OK
+ArrayList<Card> hand not initialized correctly, still 0
+  OK
+End list Constructors
+
+
+- - - - - - - - List Card Player Level 1 Class Fields - - - - - - - -
+End Player Fields
+
+= = = = = = End List Card Player Level 1 Constructors/Fields = = = = = =
+
+
+= = = = = = Quick Check Card Class = = = = = =
+    spec'd > public Card ()
+    spec'd > public Card (String, String, int)
+Testing Default Constructor:
+  OK
+Testing Initialization Constructor: new Card("3","clubs",3)
+  OK
+End list Constructors
+Equals() method ok
+compareTo() method ok
+
+
+= = = = = = Quick Check Deck Class = = = = = =
+Deck Class Constructors:
+    spec'd > public Deck ()
+  ArrayList<Card> deck instantiated OK
+
+
+= = = = = = Quick Check Deck Class = = = = = =
+Deck Class Constructors:
+    spec'd > public Deck ()
+  ArrayList<Card> deck instantiated OK
+
+- - - - - - List Deck Class Fields - - - - - -
+    spec'd > private ArrayList<Card> deck
+    spec'd > public static final class String[] NAMES
+    spec'd > public static final class String[] SUITS
+    spec'd > public static final class int[] RANKS
+End Deck Fields
+
+- - - - - - - - Check shuffle() Method - - - - - - - - 
+shuffle() OK
+shuffle() OK
+shuffle() OK
+End shuffle() check
+
+
+= = = = = = Test Choose Card () = = = = = =
+Correctly chose 2 of clubs for first card
+Correctly removed chosen card from hand
+Correctly removed chosen card from hand
+
+
+= = = = = = List Card Player Level 1 methods = = = = = =
+    spec'd > public class Card chooseCard(class java.util.ArrayList, class java.util.ArrayList)
+    spec'd > public String toString()
+    spec'd > public class Card chooseCard(class java.util.ArrayList, class java.util.ArrayList)
+    spec'd > public ArrayList<Card> getHand()
+    spec'd > public void addCard(class Card)
+    spec'd > public class Card playCard(int)
+    spec'd > public ArrayList<Card> getTakenCards()
+    spec'd > public void setHand(class java.util.ArrayList)
+    spec'd > public void setTakenCards(class java.util.ArrayList)
+    spec'd > public String getName()
+    spec'd > public String toString()
+    spec'd > public void setName(String)
+    spec'd > public void updateScore(int)
+    spec'd > public int getScore()
+    spec'd > public void setScore(int)
+
+= = = = = = End List Card Player Level 1 methods = = = = = =
+

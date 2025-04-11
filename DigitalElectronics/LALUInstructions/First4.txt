@@ -1,0 +1,40 @@
+#start at memory address 0 (denoted by R0)
+ldi R0,0
+ldi R3,1
+#start operation with value of 1 (denoted by R3)
+#R1 is for incrementing address value by 1.
+ldi R1,1
+ldi R2,1
+#starting instructions
+load R2,R0
+add R3,R2
+add R0,R1
+#instruction 0 done
+load R2,R0
+add R3,R2
+add R0,R1
+#instruction 1 done
+load R2,R0
+add R3,R2 	
+add R0,R1
+#instruction 2 done
+load R2,R0
+add R3,R2
+add R0,R1
+#instruction 3 done
+load R2,R0
+sub R3,R2
+add R0,R1
+#instruction 4 done
+load R2,R0
+sub R3,R2
+add R0,R1
+#instruction 5 done
+load R2,R0
+sub R3,R2
+add R0,R1
+#instruction 6 done
+load R2,R0
+sub R3,R2
+add R0,R1
+#instruction 7 done

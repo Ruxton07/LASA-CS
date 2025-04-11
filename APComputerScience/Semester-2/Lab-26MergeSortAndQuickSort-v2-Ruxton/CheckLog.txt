@@ -1,0 +1,109 @@
+* * * * * * * * CS Checker Log file! * * * * * * * *
+
+= = = = = = Test Merge Sort = = Descending = = = =
+Sorting small_descending.txt with 4442 words
+	Arrays.sort() took:	3 ms
+	Your sort method took:	45 ms
+
+Sorting medium_descending.txt with 50098 words
+	Arrays.sort() took:	6 ms
+	Your sort method took:	266 ms
+
+Sorting large_descending.txt with 97924 words
+	Arrays.sort() took:	11 ms
+	Your sort method took:	439 ms
+
+
+= = = = = End Test Test Merge Sort Descending = = = = =
+
+
+= = = = = = Test Merge Sort Random = = = = = =
+Sorting small_random.txt with 4442 words
+	Arrays.sort() took:	7 ms
+	Your sort method took:	21 ms
+
+Sorting medium_random.txt with 50098 words
+	Arrays.sort() took:	68 ms
+	Your sort method took:	328 ms
+
+Sorting large_random.txt with 97924 words
+	Arrays.sort() took:	115 ms
+	Your sort method took:	759 ms
+
+
+= = = = = End Test Merge Sort Random = = = = =
+
+
+= = = = = = Test Quick Sort Descending = = = = = =
+Sorting small_descending.txt with 4442 words
+	Arrays.sort() took:	0 ms
+	Your sort method took:	8 ms
+
+Sorting medium_descending.txt with 50098 words
+	Arrays.sort() took:	2 ms
+	Your sort method took:	95 ms
+
+Sorting large_descending.txt with 97924 words
+	Arrays.sort() took:	4 ms
+	Your sort method took:	249 ms
+
+
+= = = = = End Test Quick Sort Descending = = = = =
+
+
+= = = = = = Test PCChecker Version = = = = = =
+Checker version 0.03 is OK
+
+= = = = = = End Test PCChecker Version = = = = = =
+
+
+= = = = = = Test Merge Sort Ascending = = = = = =
+Sorting small_ascending.txt with 4442 words
+	Arrays.sort() took:	0 ms
+	Your sort method took:	6 ms
+
+Sorting medium_ascending.txt with 50098 words
+	Arrays.sort() took:	3 ms
+	Your sort method took:	156 ms
+
+Sorting large_ascending.txt with 97924 words
+	Arrays.sort() took:	5 ms
+	Your sort method took:	474 ms
+
+
+= = = = = End Test Merge Sort Ascending = = = = =
+
+
+= = = = = = Test Quick Sort Ascending = = = = = =
+Sorting small_ascending.txt with 4442 words
+	Arrays.sort() took:	0 ms
+	Your sort method took:	4 ms
+
+Sorting medium_ascending.txt with 50098 words
+	Arrays.sort() took:	2 ms
+	Your sort method took:	73 ms
+
+Sorting large_ascending.txt with 97924 words
+	Arrays.sort() took:	3 ms
+	Your sort method took:	156 ms
+
+
+= = = = = End Test Quick Sort Ascending = = = = =
+
+
+= = = = = = Test Quick Sort Random = = = = = =
+Sorting small_random.txt with 4442 words
+	Arrays.sort() took:	2 ms
+	Your sort method took:	3 ms
+
+Sorting medium_random.txt with 50098 words
+	Arrays.sort() took:	42 ms
+	Your sort method took:	90 ms
+
+Sorting large_random.txt with 97924 words
+	Arrays.sort() took:	76 ms
+	Your sort method took:	208 ms
+
+
+= = = = = End Test Quick Sort Random = = = = =
+

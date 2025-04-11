@@ -1,0 +1,66 @@
+* * * * * * * * CS Checker Log file! * * * * * * * *
+
+= = = = = = Test SelectionSort Array Ascending = = = = = =
+areSorted: true
+elapsed Time 4970
+
+= = = = = End Test SelectionSort Array Ascending = = = = =
+
+
+= = = = = = Test SelectionSort Array Descending = = = = = =
+areSorted: true
+ testArray: [86, 81, 72, 44, 38, 22, 20, 19, 7, 2]
+    sorted: [86, 81, 72, 44, 38, 22, 20, 19, 7, 2]
+elapsed Time 4040
+
+= = = = = End Test SelectionSort Array Descending = = = = =
+
+
+= = = = = End Test PCChecker Version = = = = =
+
+
+= = = = = = Test SelectionSort ArrayList Ascending = = = = = =
+areSorted: true
+elapsed Time 53870
+
+= = = = = End Test SelectionSort ArrayList Ascending = = = = =
+
+
+= = = = = = Test SelectionSort ArrayList Descending = = = = = =
+areSorted: true
+ testArray: [10, 54, 36, 93, 31, 21, 92, 52, 3, 75]
+    sorted: [93, 92, 75, 54, 52, 36, 31, 21, 10, 3]
+elapsed Time 37341
+
+= = = = = End Test SelectionSort ArrayList Descending = = = = =
+
+
+= = = = = = Test BubbleSort Array Ascending = = = = = =
+areSorted: trueelapsed Time 8950
+= = = = = End Test BubbleSort Array Ascending = = = = =
+
+
+= = = = = = Test BubbleSort ArrayList Ascending = = = = = =
+areSorted: true
+elapsed Time 22669
+
+= = = = = End Test BubbleSort ArrayList Ascending = = = = =
+
+
+= = = = = = Test BubbleSort Array Descending = = = = = =
+areSorted: true
+ testArray: [76, 54, 43, 42, 38, 35, 33, 11, 10, 10]
+    sorted: [76, 54, 43, 42, 38, 35, 33, 11, 10, 10]
+elapsed Time 6091
+
+= = = = = End Test BubbleSort Array Descending = = = = =
+
+
+= = = = = = Test BubbleSort ArrayList Descending = = = = = =
+areSorted: true
+ testArray: [91, 85, 84, 83, 71, 61, 60, 48, 41, 37]
+    sorted: [91, 85, 84, 83, 71, 61, 60, 48, 41, 37]
+elapsed Time 4729
+
+= = = = = End Test BubbleSort ArrayList Descending = = = = =
+

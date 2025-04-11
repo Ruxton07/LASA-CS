@@ -1,0 +1,45 @@
+ldi R2,0
+ldi R1,1
+ldi R3,2
+ldi R0,1
+
+st R1,R2 #F2=1
+
+st R3,R0 #F3=2
+
+add R0,R3
+st R0,R3 #F4=3
+
+add R2,R3
+add R2,R0
+st R2,R0 #F5=5
+
+add R3,R0
+add R3,R0
+ld R2,R0
+add R0,R1
+st R3,R0 #F6=8
+
+add R2,R3
+ld R3,R0
+add R0,R1
+st R2,R0 #F7=13
+
+add R3,R2
+ld R2,R0
+add R0,R1
+st R3,R0 #F8=21
+
+add R2,R3
+ld R3,R0
+add R0,R1
+st R2,R0 #F9=34
+
+add R3,R2
+ld R2,R0
+add R0,R1
+st R3,R0 #F10=55
+
+add R2,R3
+add R0,R1
+st R2,R0 #F11=89

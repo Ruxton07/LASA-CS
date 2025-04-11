@@ -1,0 +1,191 @@
+* * * * * * * * CS Checker Log file! * * * * * * * *
+
+= = = = = = List Player Class Constructors & Instance Variables = = = = = =
+    spec'd > public Player (String, int)
+
+- - - - - - - - List Player Class Fields - - - - - - - -
+    spec'd > private class String name
+    spec'd > private int score
+End Player Fields
+
+
+- - - - - - - - Test CardPlayer Constructor - - - - - - - -
+  Constructor initializes fields OK
+"ArrayList<Card> hand" initialized correctly
+  OK
+End list Constructors
+
+
+- - - - - - - - Test CardPlayer Constructor - - - - - - - -
+  Constructor initializes fields OK
+"ArrayList<Card> hand" initialized correctly
+  OK
+End list Constructors
+
+- - - - - - - - List Card Player Class Fields - - - - - - - -
+    spec'd > private ArrayList<Card> hand
+    spec'd > private ArrayList<Card> takenCards
+End Player Fields
+
+
+= = = = = = Test Card Game Setup = = = = = =
+
+- - - - - - - - Test Card Game Setup - - - - - - - -
+>>> Printing game in TestCardGame:
+***Hearts***
+Betty (0) []
+Bob (0) []
+Sue (0) []
+Albert (0) []
+deck -> c2(2)c3(3)c4(4)c5(5)c6(6)c7(7)c8(8)c9(9)cT(10)cJ(11)cQ(12)cK(13)cA(14)s2(2)s3(3)s4(4)s5(5)s6(6)s7(7)s8(8)s9(9)sT(10)sJ(11)sQ(12)sK(13)sA(14)h2(2)h3(3)h4(4)h5(5)h6(6)h7(7)h8(8)h9(9)hT(10)hJ(11)hQ(12)hK(13)hA(14)d2(2)d3(3)d4(4)d5(5)d6(6)d7(7)d8(8)d9(9)dT(10)dJ(11)dQ(12)dK(13)dA(14)
+>>> Printing game in TestCardGame:
+***Hearts***
+Betty (0) [s2(2), s3(3), s4(4), s5(5), s6(6), s7(7), c3(3), c5(5), c7(7), c9(9), cJ(11), cK(13), cA(14)]
+Bob (0) [h2(2), h3(3), h4(4), h5(5), h6(6), h7(7), s8(8), s9(9), sT(10), sJ(11), sQ(12), sK(13), sA(14)]
+Sue (0) [h8(8), h9(9), hT(10), hJ(11), hQ(12), hK(13), hA(14), c2(2), c4(4), c6(6), c8(8), cT(10), cQ(12)]
+Albert (0) [d2(2), d3(3), d4(4), d5(5), d6(6), d7(7), d8(8), d9(9), dT(10), dJ(11), dQ(12), dK(13), dA(14)]
+deck -> c2(2)c3(3)c4(4)c5(5)c6(6)c7(7)c8(8)c9(9)cT(10)cJ(11)cQ(12)cK(13)cA(14)s2(2)s3(3)s4(4)s5(5)s6(6)s7(7)s8(8)s9(9)sT(10)sJ(11)sQ(12)sK(13)sA(14)h2(2)h3(3)h4(4)h5(5)h6(6)h7(7)h8(8)h9(9)hT(10)hJ(11)hQ(12)hK(13)hA(14)d2(2)d3(3)d4(4)d5(5)d6(6)d7(7)d8(8)d9(9)dT(10)dJ(11)dQ(12)dK(13)dA(14)
+End Card Game Fields
+
+= = = = = = End List Card Game Constructors/Fields = = = = = =
+
+
+- - - - - - - - List Card Player Level 1 methods - - - - - - - -
+    spec'd > public class Card chooseCard(class java.util.ArrayList, class java.util.ArrayList)
+    spec'd > public String toString()
+    spec'd > public class Card chooseCard(class java.util.ArrayList, class java.util.ArrayList)
+    spec'd > public ArrayList<Card> getHand()
+    spec'd > public void addCard(class Card)
+    spec'd > public class Card playCard(int)
+    spec'd > public ArrayList<Card> getTakenCards()
+    spec'd > public void setHand(class java.util.ArrayList)
+    spec'd > public void setTakenCards(class java.util.ArrayList)
+    spec'd > public String getName()
+    spec'd > public String toString()
+    spec'd > public void setName(String)
+    spec'd > public void updateScore(int)
+      user > public class Player getPlayer(int)
+    spec'd > public int getScore()
+    spec'd > public void setScore(int)
+
+- - - - - - - End List Card Player Level 1 methods - - - - - - -
+
+
+- - - - - - - - List Card Player Level 1 operation - - - - - - - -
+After adding 6 cards. Player -> Kara Jones (0) [d3(3), hA(14), s6(6), s7(7), c2(2), c3(3)]
+                     refHand -> [d3(3), hA(14), s6(6), s7(7), c2(2)]
+playCard() correct: c3(3) at index 5 and updated score to 27 points. Player -> Kara Jones (27) [d3(3), hA(14), s6(6), s7(7), c2(2)]
+chooseCard followed suit correctly
+chooseCard updated Player's hand correctly
+
+= = = = = = Test Card Player Level1  = = = = = =
+
+
+= = = = = = Quick Check Card Class = = = = = =
+    spec'd > public Card ()
+    spec'd > public Card (String, String, int)
+Testing Default Constructor:
+  OK
+Testing Initialization Constructor: new Card("3","clubs",3)
+  OK
+End list Constructors
+Equals() method ok
+compareTo() method ok
+
+
+= = = = = = Quick Check Deck Class = = = = = =
+Deck Class Constructors:
+    spec'd > public Deck ()
+  ArrayList<Card> deck instantiated OK
+
+
+= = = = = = Quick Check Deck Class = = = = = =
+Deck Class Constructors:
+    spec'd > public Deck ()
+  ArrayList<Card> deck instantiated OK
+
+- - - - - - List Deck Class Fields - - - - - -
+    spec'd > private ArrayList<Card> deck
+    spec'd > public static final class String[] NAMES
+    spec'd > public static final class String[] SUITS
+    spec'd > public static final class int[] RANKS
+End Deck Fields
+
+- - - - - - - - Check shuffle() Method - - - - - - - - 
+shuffle() OK
+shuffle() OK
+shuffle() OK
+End shuffle() check
+
+
+= = = = = = Quick Check Deck Class = = = = = =
+Deck Class Constructors:
+    spec'd > public Deck ()
+  ArrayList<Card> deck instantiated OK
+
+- - - - - - List Deck Class Fields - - - - - -
+    spec'd > private ArrayList<Card> deck
+    spec'd > public static final class String[] NAMES
+    spec'd > public static final class String[] SUITS
+    spec'd > public static final class int[] RANKS
+End Deck Fields
+
+- - - - - - - - Check shuffle() Method - - - - - - - - 
+shuffle() OK
+shuffle() OK
+shuffle() OK
+End shuffle() check
+
+= = = = = = End Quick Check Deck Class = = = = = =
+
+
+= = = = = = Test PCChecker Version = = = = = =
+Checker version 0.03 is OK
+
+
+= = = = = = List Card Game methods = = = = = =
+    spec'd > public String toString()
+    spec'd > public class Deck getDeckOfCards()
+    spec'd > public void deal(int, int)
+    spec'd > public class Player getPlayer(int)
+      user > public String getNameOfGame()
+    spec'd > public ArrayList<CardPlayer> getPlayers()
+    spec'd > public int getNumberOfPlayers()
+      user > public int getCurrentPlayer()
+      user > public void setDeckOfCards(class Deck)
+      user > public void setNameOfGame(String)
+      user > public void setPlayers(class java.util.ArrayList)
+      user > public void setNumberOfPlayers(int)
+      user > public void setCurrentPlayer(int)
+    spec'd > public void playGame()
+      user > public int score4Game(class java.util.ArrayList)
+      user > public int takesRound(int, class java.util.ArrayList)
+      user > public void checkRound(class java.util.ArrayList, int)
+      user > public int nextPlayerIdx(int)
+      user > public void setCurrentPlayerToStartingPlayer()
+
+= = = = = = End List Card Game methods = = = = = =
+
+
+= = = = = = List Player Class Constructors & Instance Variables = = = = = =
+    spec'd > public CardGame (String, int, class [Ljava.lang.String;, int)
+  OK
+End list Constructors
+
+
+- - - - - - - - List Card Game Class Fields - - - - - - - -
+    spec'd > private class Deck deckOfCards
+    spec'd > private class String nameOfGame
+    spec'd > private ArrayList<CardPlayer> players
+    spec'd > private int numberOfPlayers
+    spec'd > private int currentPlayer
+End Card Game Fields
+
+= = = = = = End List Card Game Constructors/Fields = = = = = =
+
+
+= = = = = = Test Choose Card () = = = = = =
+Correctly chose 2 of clubs for first card
+Correctly removed chosen card from hand
+Correctly removed chosen card from hand
+

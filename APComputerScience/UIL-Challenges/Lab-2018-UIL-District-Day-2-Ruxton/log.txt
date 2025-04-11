@@ -1,0 +1,54 @@
+
+Entering jeremy test
+Jeremy class not found
+Exiting jeremy test
+
+Entering bayani test
+Output content error!
+Outputs formats do NOT Match
+Exiting bayani test
+
+Entering layla test
+Layla class not found
+Exiting layla test
+
+Entering gleb test
+Output contents and formats Match
+Exiting gleb test
+
+Entering raymond test
+Raymond class not found
+Exiting raymond test
+
+Entering dryrun test
+DryRun class not found
+Exiting dryrun test
+
+Entering carla test
+Carla class not found
+Exiting carla test
+
+Entering kinga test
+Kinga class not found
+Exiting kinga test
+
+Entering candela test
+Output content error!
+Outputs formats do NOT Match
+Exiting candela test
+
+Entering diya test
+Diya class not found
+Exiting diya test
+
+Entering max test
+Max class not found
+Exiting max test
+
+Entering nandita test
+Nandita class not found
+Exiting nandita test
+
+Entering alice test
+Alice class not found
+Exiting alice test

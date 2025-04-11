@@ -1,0 +1,1 @@
+run="javac -cp . *.java ; java Main"

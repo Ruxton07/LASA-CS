@@ -1,0 +1,34 @@
+* Buffer simulation
+.include "../Models/MOSIS.txt"
+
+Vsupply vdd 0 1.8V
+.global vdd
+
+.subckt inv in out wp=1u wn=1u
+Mp0 out in vdd vdd ibm0p13pmos W='wp' L=0.13u
+Mn0 out in 0 0 ibm0p13nmos W='wn' L=0.12u
+.ends
+
+*5 inverter ring
+xinv1 oscin osc1 inv wp=5.4u wn=2.23u
+xinv2 osc1 osc2 inv wp=5.4u wn=2.23u
+xinv3 osc2 osc3 inv wp=5.4u wn=2.23u
+xinv4 osc3 osc4 inv wp=5.4u wn=2.23u
+xinv5 osc4 oscin inv wp=5.4u wn=2.23u
+C1 0 osc1 100f
+C2 0 osc2 100f
+C3 0 osc3 100f
+C4 0 osc4 100f
+C5 0 oscin 100f
+.control
+run 
+set color0 = white
+set xbrushwidth = 5 
+plot v(oscin) v(osc1) v(osc2) v(osc3) v(osc4)
+meas tran tp TRIG V(osc1) val=0.9 rise=1 TD=3.5n TARG V(osc1) val=0.9 rise=2 TD=3.5n
+meas tran tlh TRIG V(osc1) val=0.18 rise=1 TD=3.5n TARG V(osc1) val=1.62 rise=1 TD=3.5n
+meas tran thl TRIG V(osc1) val=1.62 fall=1 TD=3.5n TARG V(osc1) val=0.18 fall=1 TD=3.5n
+.endc
+
+.TRAN 2p 9n
+.end

@@ -1,0 +1,1 @@
+When you are ready to test your Trio class, **uncomment** lines 60-62 & 67-69 in Main.java.
