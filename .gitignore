@@ -36,3 +36,7 @@
 *.secret
 *.key
 **/hosts.yml
+**/hosts.yaml
+**/.git
+**/.env
+**/.config
