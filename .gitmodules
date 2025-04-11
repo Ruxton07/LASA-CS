@@ -1,0 +1,7 @@
+[submodule "2D-Fluid-Advection"]
+	path = 2D-Fluid-Advection
+	url = https://github.com/Ruxton07/2D-Fluid-Advection
+
+[submodule "LasaSlanguage"]
+	path = LasaSlanguage
+	url = https://github.com/Ruxton07/LasaSlanguage
