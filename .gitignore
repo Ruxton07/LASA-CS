@@ -42,4 +42,7 @@
 **/.config
 
 # Git Repositories
-**/IndStudyGits/*
+**/IndStudyGits/
+
+# Miscellaneous
+DigitalElectronics/Spice64/
