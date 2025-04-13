@@ -1,4 +1,4 @@
-<img style="width:100%;" src="docs/lasabanner.png">
+<img style="width:100%;" src="docs/lasacsraptorlogo.png">
 
 [![LASA{CS} Website](https://img.shields.io/badge/LASA{CS}_Website-006666?style=for%2Dthe%2Dbadge&logo=swagger)](https://lasacs.com/)
 
