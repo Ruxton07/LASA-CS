@@ -1,0 +1,43 @@
+ldi R0,0         # R0 = initial max
+ldi R1,1         # R1 = constant 1
+ld R2,R0         # R2 = start address (data[0])
+ld R3,R1         # R3 = end address (data[1])
+ld R1,R2         # R1 = first number to check
+
+t0: sub R0,R1        # (current max) - (current number)
+jmpn replace
+add R0,R1
+jmp continue
+nop
+
+replace: mv R0,R1         # update max to current number
+
+continue: ldi R1,1
+add R2,R1        # increment address pointer
+ld R3,R1
+sub R3,R2        # check if R2 > end address
+jmpn D           # if done, halt
+
+ld R1,R2         # load next number
+ldi R3,0
+sub R1,R3
+jmpn testposneg
+sub R0,R3
+jmpn testnegpos
+nop
+jmp t0
+nop
+
+D: halt
+
+testposneg: sub R0,R3
+jmpn t0
+nop
+jmp continue
+nop
+
+testnegpos: sub R0,R3
+jmpn replace
+nop
+jmp t0
+nop

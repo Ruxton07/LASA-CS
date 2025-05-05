@@ -1,0 +1,12 @@
+ldi R0,1        # F(0)
+ldi R1,0        # F(1)
+ldi R2,0        # address pointer
+ldi R3,1        # constant 1
+
+t0: add R1,R0       # R1 = F(n+1) = F(n) + F(n-1)
+st R1,R2        # store F(n+1)
+add R2,R3       # address++
+add R0,R1       # R0 = F(n+2) = F(n+1) + F(n)
+st R0,R2        # store F(n+2)
+jmp t0
+add R2,R3       # address++

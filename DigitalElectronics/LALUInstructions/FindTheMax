@@ -1,0 +1,20 @@
+ldi R0,0        # Initial max
+ldi R1,1        # Constant 1 / Temp
+ld R2,R0        # Start / Counter
+ld R3,R1        # End
+ld R1,R2        # Temp = value
+
+t0: sub R1,R0
+    jmpn skip
+    add R1,R0
+    mv R0,R1
+
+skip: ldi R1,1
+    add R2,R1 # R2++
+    sub R3,R2   # R3 = end - R2
+    jmpn D
+    add R3,R2
+    jmp t0
+    ld R1,R2
+
+D: halt

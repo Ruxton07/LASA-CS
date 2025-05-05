@@ -1,0 +1,13 @@
+ldi R0,0
+ldi R1,1
+ldi R2,1
+ldi R3,0
+
+t0: add R2,R0
+    st R2,R3
+    mv R0,R1
+    mv R1,R2
+    ldi R2,1
+    add R3,R2
+    jmp t0
+    mv R2,R1
