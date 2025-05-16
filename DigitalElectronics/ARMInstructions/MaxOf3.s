@@ -1,6 +1,7 @@
-DAT    DCD     0x45,0xc1,0x1f
+DAT    DCD     0x5,0x7,0x3
        LDR     R0, =0x200 ; base address
        LDR     R1, [R0], #4 ; R1 = P
+
        LDR     R2, [R0], #4 ; R2 = Q
        LDR     R3, [R0] ; R3 = R
 
